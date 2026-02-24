@@ -16,6 +16,7 @@ services:
         volumes:
             - sqlite:/bot/sqlite
             - cache:/bot/cache
+            - ./fonts:/bot/fonts
 
 # SQLite database for tags and package cache are stored in named volumes managed by Docker. As long
 # as the volumes are kept in between container rebuilds, they won't need to be recreated.
